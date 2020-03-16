@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/post_border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/post_profile_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/profile"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/post_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserName"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@android:color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Updated a Post"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/post_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/post_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:textSize="11sp"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/post_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post Description"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:textStyle="italic"
+                android:textColor="@color/postColor"/>
+
+
+            <ImageView
+                android:id="@+id/click_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:src="@drawable/postimage"
+                android:scaleType="centerCrop"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+           <ImageView
+               android:id="@+id/like_button"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_gravity="start"
+               android:layout_margin="5dp"
+               android:src="@drawable/beforelike"/>
+
+            <TextView
+                android:id="@+id/display_no_of_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Likes"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/holo_green_light"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/comment_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="210dp"
+                android:src="@drawable/comment"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

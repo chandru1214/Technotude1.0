@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Technotude</string>
+    <string name="drawer_open" />
+    <string name="drawer_close" />
+    <string name="ad_unit_id">ca-app-pub-2052757055681240/2358734833</string>
+    <string name="register_number" />
+    <string name="password" />
+    <string name="login" />
+
+
+    <string name="app_name1">Lesurebreaker</string>
+    <string name="register_number1">Register Number</string>
+    <string name="password1">Password</string>
+    <string name="login1">Login</string>
+    <string name="create_new">Create New : </string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_id">Email Id</string>
+    <string name="register">Register</string>
+    <string name="questions">Questions</string>
+    <string name="marks">Marks</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="you_are_complted_the_test">You have completed the test</string>
+    <string name="your_score_is">Your Score is :</string>
+    <string name="click_here_to_go_home">Click Here to go Home</string>
+    <string name="next">Next</string>
+    <string name="next1">NEXT</string>
+
+</resources>

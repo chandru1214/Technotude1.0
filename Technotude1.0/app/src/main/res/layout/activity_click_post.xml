@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tech.info.sasurie.sociall.ClickPostActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/click_app_bar"
+            layout="@layout/app_bar_layout"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/click_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/postimage"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/click_post_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Description"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/sendercolor"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/edit_post_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/editpost"/>
+
+        <ImageView
+            android:id="@+id/delete_post_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:src="@drawable/delete"/>
+
+    </LinearLayout>
+
+</LinearLayout>

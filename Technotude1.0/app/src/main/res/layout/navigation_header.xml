@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@drawable/nav_head">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nav_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/nav_user_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="Your Full Name"
+        android:textColor="@color/sendercolor"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

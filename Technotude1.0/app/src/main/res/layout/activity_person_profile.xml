@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tech.info.sasurie.sociall.PersonProfileActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/person_profile_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile"/>
+
+            </LinearLayout>
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   android:layout_margin="5dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="10dp">
+
+                       <TextView
+                           android:id="@+id/person_profile_full_name"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Full Name"
+                           android:textAlignment="center"
+                           android:layout_gravity="center"
+                           android:textStyle="bold|italic"
+                           android:textColor="@android:color/black"
+                           android:textSize="24sp"
+                           android:layout_margin="5dp"/>
+
+
+                       <TextView
+                           android:id="@+id/person_profile_status"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Status"
+                           android:textSize="18sp"
+                           android:textAlignment="center"
+                           android:textColor="@color/sendercolor"
+                           android:layout_margin="5dp"
+                           />
+
+
+                       <TextView
+                           android:id="@+id/person_profile_username"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="UserName"
+                           android:textSize="14sp"
+                           android:textStyle="italic"
+                           android:layout_margin="5dp"
+                           android:textAlignment="center"
+                           android:textColor="@color/colorAccent"
+                           />
+
+                       <TextView
+                           android:id="@+id/person_profile_mobile"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Phone Number"
+                           android:layout_margin="5dp"
+                           android:textAlignment="center"
+                           android:textColor="@color/postColor"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_margin="10dp">
+
+                       <Button
+                           android:id="@+id/person_send_friend_request_btn"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Send Friend Request"
+                           android:layout_margin="5dp"
+                           android:textColor="@android:color/white"
+                           android:textStyle="bold"
+                           android:background="@drawable/round_button"/>
+
+                       <Button
+                           android:id="@+id/person_decline_friend_request_btn"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Decline Friend Request"
+                           android:layout_margin="5dp"
+                           android:textColor="@android:color/white"
+                           android:textStyle="bold"
+                           android:background="@drawable/round_button"/>
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+
+           </ScrollView>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

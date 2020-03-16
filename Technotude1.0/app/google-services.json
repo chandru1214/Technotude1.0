@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "project_number": "767574232091",
+    "firebase_url": "https://sociall-be1ae.firebaseio.com",
+    "project_id": "sociall-be1ae",
+    "storage_bucket": "sociall-be1ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767574232091:android:2ea540da194d26f9",
+        "android_client_info": {
+          "package_name": "com.rbk.sociall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767574232091-6kb2q9gpv5fhrdcudlvl6h23iv4kqde2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rbk.sociall",
+            "certificate_hash": "14124ad170db67bbc904b5a6a9d7138520299d61"
+          }
+        },
+        {
+          "client_id": "767574232091-ubmnjfafvhjprepjqphroshpef94ci3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rbk.sociall",
+            "certificate_hash": "64cd8d335b0e2d1bc59295a7a2e5e585f470785e"
+          }
+        },
+        {
+          "client_id": "767574232091-hd9ls2ttjmqs78dqodep6krl86iba5hh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rbk.sociall",
+            "certificate_hash": "aff16945a0697f711ef0ad7c748687b5e20c0e35"
+          }
+        },
+        {
+          "client_id": "767574232091-5gflm44g9mv11oegk9pjp79qbc97e88u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE8JlWA3bUBiFlUoKU0CHChsf_tyZzdqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767574232091-5gflm44g9mv11oegk9pjp79qbc97e88u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767574232091:android:4e6c3dad8854bcb9",
+        "android_client_info": {
+          "package_name": "tech.info.sasurie.sociall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767574232091-68dc1lbv7vabbqhqefgkmliaavh01kim.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.info.sasurie.sociall",
+            "certificate_hash": "e85e11d446337eb32cfe35d03830c8561fe0654a"
+          }
+        },
+        {
+          "client_id": "767574232091-r86a6hb9jbqp71c5355srj145j1gsqfn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.info.sasurie.sociall",
+            "certificate_hash": "64cd8d335b0e2d1bc59295a7a2e5e585f470785e"
+          }
+        },
+        {
+          "client_id": "767574232091-elpbrvs10kc9g9jns0vnvs76p9call63.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.info.sasurie.sociall",
+            "certificate_hash": "14124ad170db67bbc904b5a6a9d7138520299d61"
+          }
+        },
+        {
+          "client_id": "767574232091-5gflm44g9mv11oegk9pjp79qbc97e88u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE8JlWA3bUBiFlUoKU0CHChsf_tyZzdqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767574232091-5gflm44g9mv11oegk9pjp79qbc97e88u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767574232091:android:57a7aef3da59bf38",
+        "android_client_info": {
+          "package_name": "tech.sasurieinfo.newsociall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767574232091-dtuc1fhntth4id9ah8f52qcvuisohm6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.sasurieinfo.newsociall",
+            "certificate_hash": "14124ad170db67bbc904b5a6a9d7138520299d61"
+          }
+        },
+        {
+          "client_id": "767574232091-5gflm44g9mv11oegk9pjp79qbc97e88u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE8JlWA3bUBiFlUoKU0CHChsf_tyZzdqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767574232091-5gflm44g9mv11oegk9pjp79qbc97e88u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

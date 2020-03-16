@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tech.info.sasurie.sociall.CommentsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/comments_app_bar"
+            layout="@layout/app_bar_layout"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/comment_input"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:background="@drawable/inputtext"
+            android:padding="20px"
+            android:hint="Any Comments Here!!!"/>
+
+        <ImageView
+            android:id="@+id/post_comment_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/sendimage"
+            android:layout_gravity="end"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="2dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/comments_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

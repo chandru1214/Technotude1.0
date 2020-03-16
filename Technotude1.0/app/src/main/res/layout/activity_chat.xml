@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tech.info.sasurie.sociall.ChatActivity">
+
+    <include
+        android:id="@+id/chat_app_bar"
+        layout="@layout/app_bar_layout"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messages_list"
+        android:layout_width="346dp"
+        android:layout_height="439dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_app_bar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/send_image_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:padding="10px"
+        app:layout_constraintBottom_toBottomOf="@+id/input_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_message"
+        app:layout_constraintVertical_bias="0.466"
+        app:srcCompat="@drawable/photos"
+        android:scaleType="centerInside"/>
+
+    <EditText
+        android:id="@+id/input_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Type Here"
+        android:inputType="textMultiLine"
+        android:background="@drawable/inputtext"
+        android:padding="15px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/send_message_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/send_image_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/send_message_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="10px"
+        app:layout_constraintBottom_toBottomOf="@+id/input_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_message"
+        app:layout_constraintTop_toTopOf="@+id/input_message"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/sendimage" />
+
+</android.support.constraint.ConstraintLayout>

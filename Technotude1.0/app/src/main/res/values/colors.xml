@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="postColor">#795548</color>
+    <color name="sendercolor">#a0179e</color>
+    <color name="recievercolor">#795548</color>
+    <color name="profilecolor">#F50057</color>
+    <color name="statuscolor">#B2FF59</color>
+    <color name="sit">#00a300</color>
+    <color name="colorSplash">#933800</color>
+
+        <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary">#795548</color>
+    <color name="colorPrimaryDark">#5D4037</color>
+
+    <color name="white">#ffffff</color>
+    <color name="darkgrey">#6c6c6c</color>
+    <color name="colorPrimary1">#8422e6</color>
+    <color name="colorPrimaryDark1">#8907F7</color>
+    <color name="colorAccent1">#ff4081</color>
+    <color name="red">#fb1d1d</color>
+    <color name="background_material_light">#fefefe</color>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawable_layout"
+    android:background="@android:color/white"
+    tools:context="tech.info.sasurie.sociall.MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <include
+           layout ="@layout/app_bar_layout"
+           android:id="@+id/main_page_toolbar">
+
+       </include>
+
+       <FrameLayout
+           android:id="@+id/main_container"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_marginTop="11dp"
+           android:layout_below="@+id/main_page_toolbar">
+
+       </FrameLayout>
+
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/all_users_post_list"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_alignParentStart="true"
+           android:layout_marginBottom="50dp"
+           android:layout_below="@+id/main_page_toolbar" />
+       <com.google.android.gms.ads.AdView
+           xmlns:ads="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/adView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_alignParentBottom="true"
+           ads:adSize="BANNER"
+           ads:adUnitId="@string/ad_unit_id">
+       </com.google.android.gms.ads.AdView>
+
+       <ImageView
+           android:id="@+id/add_new_post_button"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentEnd="true"
+           android:scaleType="centerInside"
+           android:layout_marginRight="8dp"
+           android:layout_marginTop="5dp"
+           app:srcCompat="@drawable/camera"/>
+       <ImageView
+           android:id="@+id/friend_request_btn"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_marginRight="70dp"
+           android:layout_marginTop="5dp"
+           android:layout_alignParentEnd="true"
+           android:src="@drawable/team"/>
+
+
+   </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_margin="3dp"
+        app:menu="@menu/navigation_menu"/>
+
+
+
+</android.support.v4.widget.DrawerLayout>

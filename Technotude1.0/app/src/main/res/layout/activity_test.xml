@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F8EDED"
+    android:weightSum="100"
+    tools:context=".TestActivity">>
+    <LinearLayout
+        android:layout_height="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/box_text">
+        <TextView
+            android:id="@+id/duration"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="@font/font"
+            android:layout_weight="1"
+            android:text="Test Duration"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:fontFamily="@font/font"
+            android:textAlignment="viewEnd"
+            android:text="Time Remain : "
+            android:drawableRight="@drawable/ic_index"
+            android:gravity="end" />
+
+        <TextView
+            android:id="@+id/remain_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/font"
+            android:textColor="@color/red"
+            android:text="10:00" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="55dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/question_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textColor="#3E81FD"
+                android:fontFamily="@font/font"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:fontFamily="@font/font"
+                android:textColor="#3E81FD"
+
+                android:layout_toEndOf="@+id/question_no"
+                android:layout_toRightOf="@+id/question_no"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/radioquestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/choice1"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/font"
+                android:textColor="#3E81FD"
+
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/choice2"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:textColor="#3E81FD"
+
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/choice3"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:textColor="#3E81FD"
+
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/choice4"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:textColor="#3E81FD"
+
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:fontFamily="@font/font"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:text="@string/next1" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            android:background="#fff">
+
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/eraser"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

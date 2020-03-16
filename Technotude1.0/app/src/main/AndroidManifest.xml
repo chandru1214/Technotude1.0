@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="tech.info.sasurie.sociall">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="UnusedAttribute">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SetupActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".PostActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CommentsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ClickPostActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FindFriendsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".PersonProfileActivity" />
+        <activity
+            android:name=".FriendsRequestActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FriendsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".MessageActivity" />
+        <activity
+            android:name=".MessageActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".MyPostsActivity"
+            android:parentActivityName=".ProfileActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutSociallActivity" />
+        <activity android:name=".AdminSociallActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2052757055681240~3637998856" />
+
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".TestViewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MarkActivity" />
+
+        <service android:name=".Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".NewTestViewActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".OtpActivity" />
+        <activity android:name=".AllUsersMarkDisplayActivity"></activity>
+    </application>
+
+</manifest>

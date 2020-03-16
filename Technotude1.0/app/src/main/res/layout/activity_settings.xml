@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tech.info.sasurie.sociall.SettingsActivity">
+
+
+    <include
+        android:id="@+id/settings_toolbar"
+        layout="@layout/app_bar_layout"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/settings_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/settings_profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/profile" />
+
+            <ImageView
+                android:id="@+id/choose_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/updateimage"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="100dp"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <EditText
+                android:id="@+id/settings_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Status"
+                android:inputType="textMultiLine"
+                android:padding="20px"
+                android:background="@drawable/inputtext"/>
+
+            <EditText
+                android:id="@+id/settings_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Username"
+                android:inputType="textMultiLine"
+                android:padding="20px"
+                android:background="@drawable/inputtext"
+                />
+
+            <EditText
+                android:id="@+id/settings_profile_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Full Name"
+                android:inputType="textMultiLine"
+                android:padding="20px"
+                android:background="@drawable/inputtext"/>
+
+            <EditText
+                android:id="@+id/settings_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Mobile No"
+                android:inputType="textMultiLine"
+                android:padding="20px"
+                android:background="@drawable/inputtext"/>
+
+            <EditText
+                android:id="@+id/settings_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Country"
+                android:background="@drawable/inputtext"
+                android:inputType="textMultiLine"
+                android:padding="20px" />
+
+            <EditText
+                android:id="@+id/settings_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Date of Birth"
+                android:inputType="textMultiLine"
+                android:padding="20px"
+                android:background="@drawable/inputtext"/>
+
+            <EditText
+                android:id="@+id/settings_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Gender"
+                android:inputType="textMultiLine"
+                android:padding="20px"
+                android:background="@drawable/inputtext"/>
+
+            <EditText
+                android:id="@+id/settings_relationship_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Relationship"
+                android:inputType="textMultiLine"
+                android:padding="20px"
+                android:background="@drawable/inputtext"/>
+
+            <Button
+                android:id="@+id/update_account_setting_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_button"
+                android:text="Update Information"
+                android:textStyle="italic|bold"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
